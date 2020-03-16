@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
   <meta charset="UTF-8">
-  <title>サンプル</title>
+  <title>ライフログのはじめ方 | LOGGER</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-  <script>
-    $(function(){
-      $(".headC").click(function(){
-        $(".headB").slideToggle();
-      });
-    });
-  </script>
-
   <link rel="stylesheet" href="style.css">
+
+  <meta property="og:site_name" content="LOGGER">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="ライフログのはじめ方">
+  <meta property="og:url" content="http://●●●●●/contents.html">
+  <meta property="og:description" content="ライフログをはじめる方法やポイントについて紹介します。">
+  <meta property="og:image" content="http://●●●●●/img/life.jpg">
+
+  <meta property="fb:app_id" content="●●●●●●●●">
+
+  <meta name="twitter:site" content="@●●●●●●">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="description" content="ライフログをはじめる方法やポイントについて紹介しています。">
+  <meta name="keywords" content="ライフログ, 記録">
+
   <style>
     .sr-only {
       position: absolute;
@@ -29,10 +37,18 @@
     }
     </style>
     <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script>
+    $(function(){
+      $(".headC").click(function(){
+        $(".headB").slideToggle();
+      });
+    });
+  </script>
 </head>
 
 <body class="nohero">
-  <header>
+  <header class="head-color head-fixed">
     <div class="container">
       <div class="container-small">
       <a href="index.html" class="headA">BLOOM</a>
@@ -73,6 +89,54 @@
 
     </div>
   </article>
+
+  <aside class="related">
+    <ul>
+      <li>
+        <a href="#">
+          <div class="photo" style="background-image: url(img/p01.jpg);">
+          </div>
+          <div class="text">
+            <h2>黄色い花を飾ってみた</h2>
+            <p>黄色い花を部屋に飾るといいことがあるかもしれません。その理由は…</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+      <a href="#">
+        <div class="photo" style="background-image: url(img/p02.jpg);">
+        </div>
+        <div class="text">
+          <h2>野菜の成長記録</h2>
+          <p>野菜たちはすくすく成長しています。おもしろいので試しに記録を残してみます。</p>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <div class="photo" style="background-image: url(img/p03.jpg);">
+      </div>
+        <div class="text">
+          <h2>野菜のおいしい食べ方</h2>
+          <p>野苺をたくさんもらって困ってももう大丈夫。おいしく食べきることができます。</p>
+        </div>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <div class="photo" style="background-image: url(img/p04.jpg);">
+        </div>
+        <div class="text">
+          <h2>音の響き方</h2>
+          <p>音の響き方で物事の印象が変わる。そんなお話です。</p>
+        </div>
+      </a>
+    </li>
+    </ul>
+  </aside>
 
   <footer>
     <div class="container">
